@@ -1,0 +1,174 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(25, 4, 34);
+  background-image: url("assets/image/bg_top_c.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+section.navbar{
+  width: 100%;
+  color: white;
+  padding: 6px 40px;
+  position: fixed;
+  z-index: 2;
+}
+
+section.main-banner{
+  padding: 10% 17%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+  color: white;
+}
+
+section.langs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+}
+
+section.projects{
+  text-align: center;
+  margin: 80px;
+  padding: 30px 0px;
+}
+
+section.main-banner .mouse{
+  width: 100px;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+section.main-banner .mouse-icon{
+   width: 25px;
+   height: 45px;
+   border: 2px solid white;
+   border-radius: 15px;
+   cursor: pointer;
+   position: relative;
+   text-align: center;
+}
+
+section.main-banner .mouse-wheel{
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 3px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+ -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
+}
+
+section.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20%;
+}
+
+
+/* Animation para o scroll do mouse */
+@-webkit-keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
+}@-moz-keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
+}@keyframes wheel-up-down {
+	0% {
+	    margin-top: 2px;
+	    opacity: 0;
+	}
+	30% {
+	    opacity: 1;
+	}
+	100% {
+	    margin-top: 20px;
+	    opacity: 0;
+	}
+}
+
+/* Estilizando barrad e rolagem*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f161;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1060px) {
+  section.main-banner{
+    padding: 0px 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.langs{
+    margin: 50px 10px;
+  }
+
+  section.projects{
+    margin: 80px 10px;
+  }
+
+  section.form{
+    padding: 0px 5px;
+  }
+  section.navbar{
+    width: 100vw;
+    color: white;
+    padding: 6px 0px;
+    position: fixed;
+    z-index: 2;
+  }
+}

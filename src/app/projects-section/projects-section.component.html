@@ -1,0 +1,24 @@
+<section class="projects">
+  <h1 style="color: lightblue;">Projetos</h1>
+  <p style="color: lightblue;">Projetos práticos demonstrando minhas habilidades</p>
+
+  <div class="content">
+    <div class="project-window" *ngFor="let i of projetos">
+      <img src='{{ i.imgUrl }}' alt="" />
+
+      <a href='{{ i.projLink }}' title='{{ i.name }}'> {{ i.name }} </a>
+      <p>{{ i.description }}</p>
+
+      <div class="tag" *ngIf="i.tragName !== ''">
+        {{ i.tragName }}
+      </div>
+
+      <div class="langs-used" *ngIf="i.languagesUse.length > 0">
+        <div class="lang" *ngFor="let lang of i.languagesUse">
+          <img src='{{ lang }}' alt="" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+<section class="form">
+  <h1 >Entre em contato</h1>
+  <p>Entre em contato diretamente comigo atraves deste formulario!</p>
+
+  <form (ngSubmit)="enviarEmail()" *ngIf="errorText.length === 0">
+    <label for="nome">Seu Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="nome" name="nome" required />
+
+    <label for="email">Seu E-mail:</label>
+    <input type="email" id="email" [(ngModel)]="email" name="email" required />
+
+    <label for="mensagem">Sua Mensagem:</label>
+    <ckeditor name="editor"
+      [(ngModel)]="conteudo"
+      [config]="{
+        toolbar: [
+          { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike'] },
+          { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote'] }
+        ],
+
+        height: 120,
+        resize_maxHeight: 120,
+        removePlugins: 'elementspath'
+      }"
+    ></ckeditor>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+
+  <div class="results" *ngIf="errorText.length > 0">
+    <h1>{{ errorText }}</h1>
+    <button type="button" (click)="toggleForm()"><- Voltar</button>
+  </div>
+</section>

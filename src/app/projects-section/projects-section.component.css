@@ -1,0 +1,84 @@
+section.projects > .content{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: .2rem;
+  margin-top: 60px;
+  padding: 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  backdrop-filter: blur(3.3px);
+}
+
+section.projects > .content > .project-window {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  margin: 15px 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: .2rem;
+  position: relative;
+}
+
+section.projects > .content > .project-window > img{
+  width: 240px;
+  height: 150px;
+  align-items: center;
+  object-position: top left;
+  border-radius: .3rem;
+}
+
+section.projects > .content > .project-window > a{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin: 10px 0px;
+  transition: .1s ease-out;
+}
+section.projects > .content > .project-window > a:hover{
+  color: rgb(173, 230, 182);
+  text-decoration: underline;
+  transition: .1s ease-out;
+}
+
+section.projects > .content > .project-window > p{
+  color: white;
+  font-size: 17px;
+  width: 90%;
+  word-wrap: break-word;
+  word-break: keep-all;
+  padding: 5px 0px 45px 0px;
+}
+
+section.projects > .content > .project-window > .tag{
+  font-size: 13px;
+  font-weight: 900;
+  color: rgb(255, 237, 137);
+  position: absolute;
+  margin-left: 270px;
+  margin-top: -30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: .4rem;
+  padding: 4px;
+}
+
+section.projects > .content > .project-window > .langs-used{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 0px 0px 0px;
+  max-width: 90%;
+  border-radius: .5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  bottom: 10px;
+}
+
+section.projects > .content > .project-window > .langs-used > .lang > img{
+  margin: 0px 7px;
+  width: 20px;
+}
+

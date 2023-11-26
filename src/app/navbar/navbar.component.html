@@ -1,0 +1,15 @@
+<!-- NAVBAR COMPONENT -->
+<section class="navbar" *ngIf="initConfig(true, 'white', 7)"
+ [ngStyle]="{'color': navCharColor, 'background-color': navColor, 'backdrop-filter': filter}">
+
+ <!-- Navbar -->
+  <nav>
+    <a href="https://github.com/CodedBytes"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&pause=1000&vCenter=true&random=false&width=190&lines=%3C+CodedBytes+%2F%3E" alt="Typing SVG" /></a>
+
+    <ul>
+      <li *ngFor="let name of links; let i = index"><a href='{{ urls[i] }}' [ngStyle]="{'color': navCharColor}"> {{ name }} </a></li>
+    </ul>
+  </nav>
+
+</section>
+<!-- END OF COMPONENT -->

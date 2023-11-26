@@ -1,0 +1,32 @@
+<section class="langs">
+  <h1 style="color: lightblue;">Competências</h1>
+  <p style="color: lightblue;">Em constante aprendizado sobre as principais linguagens / frameworks e ferramentas do mercado!</p>
+
+  <div class="lang-list" >
+
+    <h2 style="color: lightblue;"> Linguagens / frameworks </h2>
+    <div class="container">
+      <div class="icon" *ngFor="let i of langs">
+        <img src='{{i.imgUrl}}' alt="" />
+        <span>{{i.name}}</span>
+
+        <div class="progress-container" >
+          <div class="progress-bar" id="myBar" [ngStyle]="{'width': i.progress + '%'}"></div>
+        </div>
+      </div><!-- Icon container -->
+    </div><!-- Languages container -->
+
+    <h2 style="color: lightblue;"> Databases </h2>
+    <div class="container">
+      <div class="icon" *ngFor="let i of Databases">
+        <img src='{{i.imgUrl}}' alt="" />
+        <span>{{i.name}}</span>
+
+        <div class="progress-container" >
+          <div class="progress-bar" id="myBar" [ngStyle]="{'width': i.progress + '%'}"></div>
+        </div>
+      </div><!-- Icon container -->
+    </div>
+  </div>
+
+</section>

@@ -1,0 +1,38 @@
+section.navbar > nav,
+section.navbar > nav > ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section.navbar > nav{
+  justify-content: space-between;
+}
+
+section.navbar > nav > ul > li {
+  list-style-type: none;
+}
+
+section.navbar > nav > ul > li > a{
+  text-decoration: none;
+  margin: 0px 0px 0px 30px;
+  font-size: 17px;
+  font-weight: 600;
+}
+section.navbar > nav > ul > li > a:hover{
+  text-decoration: underline;
+}
+
+section.navbar > nav > a > img{
+  outline: 0;
+}
+
+@media screen and (max-width: 1060px) {
+  section.navbar > nav{
+    justify-content: center;
+  }
+
+  section.navbar > nav > ul > li > a{
+    display: none;
+  }
+
+}

@@ -1,0 +1,30 @@
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 7px 10px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 7px 10px;
+  margin-bottom: 55px;
+  background-color: rgb(61, 226, 43);
+  color: white;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(160, 87, 228);
+}
+.whatsapp:hover {
+  background-color: rgb(119, 255, 104);
+}
