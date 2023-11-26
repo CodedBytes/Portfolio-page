@@ -40,7 +40,7 @@ export class ContactSectionComponent{
     };
 
     // Protocolo HTTP fazendo request para o servidor proprio de email.
-    this.http.post('http://portfoliomailapi.vercel.app/sendMail', body).subscribe(
+    this.http.post('https://portfoliomailapi.vercel.app/sendMail', body).subscribe(
       (response: any) => {this.errorText = response.status},
       error => console.error(error)
     )
