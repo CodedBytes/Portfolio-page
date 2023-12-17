@@ -33,13 +33,15 @@ export class LangsSectionComponent {
     new Items('https://api.iconify.design/devicon:typescript.svg', 65, 'TypeScript'),
     new Items('https://api.iconify.design/devicon:angular.svg', 50, 'Angular'),
     new Items('https://api.iconify.design/devicon:php.svg', 50, 'PHP'),
-    new Items('https://api.iconify.design/devicon:csharp.svg', 70, 'CSharp')
+    new Items('https://api.iconify.design/devicon:csharp.svg', 70, 'CSharp'),
+    new Items('https://api.iconify.design/vscode-icons:file-type-python.svg', 20, 'Python')
   ]
 
   // Lista de linguagens
   Databases: Items[] = [
     new Items('https://api.iconify.design/tabler:brand-mysql.svg', 85, 'MySQL'),
     new Items('https://api.iconify.design/simple-icons:microsoftsqlserver.svg', 75, 'MSSQL Server'),
+    new Items('https://api.iconify.design/logos:postgresql.svg', 30, 'PostgreSQL')
   ]
 
   constructor(){}

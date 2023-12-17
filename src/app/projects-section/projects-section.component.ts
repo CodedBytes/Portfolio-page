@@ -40,7 +40,10 @@ export class ProjectsSectionComponent {
     'https://api.iconify.design/devicon:php.svg',
     'https://api.iconify.design/devicon:csharp.svg',
     'https://api.iconify.design/tabler:brand-mysql.svg',
-    'https://api.iconify.design/akar-icons:node-fill.svg'
+    'https://api.iconify.design/akar-icons:node-fill.svg',
+    'https://api.iconify.design/vscode-icons:file-type-python.svg',
+    'https://api.iconify.design/vscode-icons:file-type-sass.svg',
+    'https://api.iconify.design/logos:postgresql.svg'
   ]
 
 
@@ -55,7 +58,7 @@ export class ProjectsSectionComponent {
       'Player de musica com design bem parecido com um app nativo, podendo pular entre muscias pausar e visualizar seu BPM.'),
 
      new Project('TecNews', '/', 'assets/image/project4.png',
-     'WIP', [this.LangsArray[0], this.LangsArray[1], this.LangsArray[2], this.LangsArray[7], this.LangsArray[8]],
+     'Done', [this.LangsArray[0], this.LangsArray[1], this.LangsArray[2], this.LangsArray[7], this.LangsArray[8]],
       'Projeto voltado para catalogação e cadastro de noticias, como um portal de noticias onde as pessaso que se cadastram podem postar uma noticia com foto titulo e texto formatado.'),
 
      new Project('Genshim Launcher', '/', 'assets/image/project5.png',
